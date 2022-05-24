@@ -375,7 +375,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="foot-form-user">
+            <div class="foot-form-client">
                 <b class="invitation">Подпишитесь на рассылку</b>
                 <form class="foot-form" name="email">
                     <label class="foot-label-email" name="email" for="email"></label>
@@ -390,14 +390,60 @@
         </div>
     </footer>
     <!-- Додаємо модальне вікно -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
                 <svg class="close-icon">
                     <use class="close" href="./images/symbol-defs.svg#icon-vectorclose" width="11px" height="11px"></use>
                 </svg>
             </button>
-            
+            <form name="modal-form">
+                <b class="modal-title">Оставьте свои данные, мы Вам перезвоним</b>
+                <div class="modal-form-in">
+                    <label class="modal-label" for="name">Имя</label>
+                    <div class="div-svg-input">
+                        <svg class="svg-input" width="12" height="12">
+                            <use href="./images/symbol-defs.svg#icon-name"></use>
+                        </svg>
+                        <input class="modal-input" type="text" name="name" id="name" autofocus>
+                    </div>                    
+                </div>
+                <div class="modal-form-in">
+                    <label class="modal-label" for="tel">Телефон</label>
+                    <div class="div-svg-input">
+                        <svg class="svg-input" width="13" height="13">
+                            <use href="./images/symbol-defs.svg#icon-phon"></use>
+                        </svg>
+                        <input class="modal-input" type="tel" name="tel" id="tel">
+                    </div>
+                </div>
+                <div class="modal-form-in">
+                    <label class="modal-label" for="mail">Почта</label>
+                    <div class="div-svg-input">
+                        <svg class="svg-input" width="15" height="12">
+                            <use href="./images/symbol-defs.svg#icon-lett"></use>
+                        </svg>
+                        <input class="modal-input" type="email" name="email" id="mail">
+                    </div>
+                </div>
+                <div class="modal-form-in">
+                    <label class="modal-label" for="comment">Коментарий</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="введите текст"></textarea>
+                </div>                
+                <div class="modal-checkbox">
+                    <input class="input-checkbox" type="checkbox" name="agree" value="yes" id="agree">
+                    <label for="agree">Соглашаюсь с рассылкой и принимаю
+                        <a class="link" href="">Условия соглашения</a>
+                    </label>
+                </div>              
+                
+                <!-- <label for="">
+                    <input type="chekbox" name="">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия соглашения</a>
+                </label> -->
+                <button class="modal-form-button" type="submit">Отправить</button>
+            </form>        
         </div>
     </div>
     <!-- Додаємо скріпт для спрацьовування модального вікна -->
