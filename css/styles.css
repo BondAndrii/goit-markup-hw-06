@@ -808,12 +808,16 @@ background-color: var(--bgc-button-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     
 }
+.modal-button:hover .close-icon, .modal-button:focus .close-icon {
+    fill: var(--accent-color);
+}
 .close-icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 11px;
-    height: 11px;    
+    height: 11px;   
+    
 }
 
