@@ -864,7 +864,15 @@ background-color: var(--bgc-button-color);
 .modal-input:hover{
     border-color: var(--accent-color);
 }
-.div-svg-input:hover .input-icon{
+.label-checkbox{ 
+    line-height: 1.71;
+    
+    color:var(--general-text-color);
+}
+.doc{
+    color: var(--accent-color);
+}
+.modal-input:hover + .input-icon{
     fill:var(--accent-color);
 }
 .input-icon{

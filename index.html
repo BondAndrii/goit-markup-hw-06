@@ -390,7 +390,7 @@
         </div>
     </footer>
     <!-- Додаємо модальне вікно -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-button" type="button" data-modal-close>
                 <svg class="close-icon">
@@ -405,26 +405,26 @@
                         <input class="modal-input" type="text" name="name" id="name">
                         <svg class="input-icon" width="12" height="12">
                             <use href="./images/symbol-defs.svg#icon-name"></use>
-                        </svg>
-                        
+                        </svg>                        
                     </div>                    
                 </div>
                 <div class="modal-form-in">
                     <label class="modal-label" for="tel">Телефон</label>
                     <div class="div-svg-input">
+                        <input class="modal-input" type="tel" name="tel" id="tel">
                         <svg class="input-icon" width="13" height="13">
                             <use href="./images/symbol-defs.svg#icon-phon"></use>
                         </svg>
-                        <input class="modal-input" type="tel" name="tel" id="tel">
+                        
                     </div>
                 </div>
                 <div class="modal-form-in">
                     <label class="modal-label" for="mail">Почта</label>
                     <div class="div-svg-input">
+                        <input class="modal-input" type="email" name="email" id="mail">
                         <svg class="input-icon" width="15" height="12">
                             <use href="./images/symbol-defs.svg#icon-lett"></use>
-                        </svg>
-                        <input class="modal-input" type="email" name="email" id="mail">
+                        </svg>                        
                     </div>
                 </div>
                 <div class="modal-form-in">
@@ -433,8 +433,8 @@
                 </div>                
                 <div class="modal-checkbox">
                     <input class="input-checkbox" type="checkbox" name="agree" value="yes" id="agree">
-                    <label for="agree">Соглашаюсь с рассылкой и принимаю
-                        <a class="link" href="">Условия соглашения</a>
+                    <label class="label-checkbox" for="agree">Соглашаюсь с рассылкой и принимаю
+                        <a class="doc" href="">Условия соглашения</a>
                     </label>
                 </div>              
                 
