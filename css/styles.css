@@ -853,9 +853,10 @@ background-color: var(--bgc-button-color);
     width: 100%;
     height: 40px;
     padding: 12px 12px 12px 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(33, 33, 33, 0.2);    
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 .div-svg-input{
     position: relative;
@@ -867,8 +868,7 @@ background-color: var(--bgc-button-color);
 .modal-textarea:focus {
     border-color: var(--accent-color);
 }
-.modal-input:active,
-.modal-textarea:active {
+.modal-input:active, .modal-textarea:active {
     border-color: var(--accent-color);
 }
 .label-checkbox{ 
@@ -886,6 +886,12 @@ background-color: var(--bgc-button-color);
 .modal-input:hover + .input-icon{
     fill:var(--accent-color);
 }
+.modal-input:focus +.input-icon {
+    fill: var(--accent-color);
+}
+.modal-input:active +.input-icon {
+    fill: var(--accent-color);
+}
 .input-icon{
     position: absolute;   
     left: 15px;
@@ -898,6 +904,7 @@ background-color: var(--bgc-button-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 .modal-checkbox{
     display: flex;
