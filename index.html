@@ -11,6 +11,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
     <!--Розмічаємо голову сторінки-->
@@ -433,16 +434,16 @@
                 </div>                
                 <div class="modal-checkbox">
                     <input class="input-checkbox" type="checkbox" name="agree" value="yes" id="agree">
-                    <label class="label-checkbox" for="agree">Соглашаюсь с рассылкой и принимаю
+                    <label class="label-checkbox" for="agree">
+                        <span class="checkbox-place">
+                            <svg class="checkbox-icon" width="16" height="15">
+                                <use href="./images/symbol-defs.svg#icon-galochka"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю
                         <a class="doc" href="">Условия соглашения</a>
                     </label>
-                </div>              
-                
-                <!-- <label for="">
-                    <input type="chekbox" name="">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия соглашения</a>
-                </label> -->
+                </div>
                 <button class="modal-form-button" type="submit">Отправить</button>
             </form>        
         </div>
