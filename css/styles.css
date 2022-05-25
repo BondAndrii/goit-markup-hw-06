@@ -867,6 +867,10 @@ background-color: var(--bgc-button-color);
 .modal-textarea:focus {
     border-color: var(--accent-color);
 }
+.modal-input:active,
+.modal-textarea:active {
+    border-color: var(--accent-color);
+}
 .label-checkbox{ 
     position: relative;
     display: flex;
